@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!--Tells the browser which html version im working with//so it can be displayed in browser on standerd mode instead of quirks mode-->
+<!--or doctype cs its unsensitive-->
+<html lang="en" dir="ltr">              
+  <head>
+    <meta charset="utf-8"> <!--Self closing tag--> <!--Meta Tag For Defining The Content Encoding--> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> <!--External-CSS-->
+    <style></style> <!--Internal CSS-->
+    <!--Inline CSS
+    <p style="property: value"></p>
+    Who's stronger: inline then internal the external
+    -->
+    <meta name="description" content="Your Website Description"><!--For the description that appears in the browser -->
+    <title>test</title> <!--For the title that appears in the browser-->
+  </head>
+  <body>
+
+    <!--HTML Tags-->
+    <div id="HTML">
+    
+  <!--Headings and paragraph and span-->
+  <div>
+  <h1>This is heading number 1</h1>
+  <h2>This is heading number 1</h2>
+  <h3>This is heading number 1</h3>
+  <h4>This is heading number 1</h4>
+  <h5>This is heading number 1</h5>
+  <h6>This is heading number 1</h6>
+  <p>This is a paragraph</p><!--<p></p> is a block element-->
+  <hr> 
+  <!-- attributes = global(like class,hidden, title)/specific(like src and alt for img, href for a)-->
+ 
+      <!--Span for Inline CSS-->
+  <span>
+      <p>this is a paragraph</p>
+    </span>  
+  <hr>
+  </div>
+  
+  <!--For links-->
+  <div>
+    <a href="https://www.google.com/" target="_blank" title="Go to Google">Google</a><!-- <a> is an inline element-->
+          <!-- the blank attribute opens the link in a new page-->
+      <a href="test.html" titele="Go to Test Page">Test</a>
+          <!-- to open a page in the same old page-->
+      <a href="#paragraphX" titele="Go to Paragraph">Paragraph X</a>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aspernatur!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aspernatur!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aspernatur!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aspernatur!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aspernatur!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aspernatur!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aspernatur!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aspernatur!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aspernatur!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aspernatur!</p>
+      <p id="paragraphX">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aspernatur!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aspernatur!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aspernatur!</p>
+          <!-- to go to a paragraph in the page -->
+      <a href="mailto:othmanekabbajbac@gmail.com">Contact</a>
+          <!-- to send an email-->
+  </div>
+
+  <!--For img-->
+  <div>
+    <img src="" alt="" width="" height="">
+    <!-- folder/folder => to go inside a folder
+         ../ => to go outside a folder 
+    -->
+  </div>
+
+  <!--For quotes-->
+    <blockquote>
+      <p>this a also paragraph</p>
+    </blockquote>
+  <hr>
+       
+  <!--Lists-->
+    <div>
+    <ul><!--Unodred List -->
+      <li></li> <!--List Item-->
+      <li></li>
+      <li></li>
+    </ul>
+  
+    <ol type="A" reversed start="B"> <!--Ordred List-->
+      <li value="">This is list item 1 </li>
+      <li>This is list item 2 </li>
+      <li>This is list item 3 </li>
+      <!--Reversed => Reverse the Ordering-->
+      <!--Start => Start From Position-->
+      <!--Type => Type of ordering ex: a A 1 I i -->
+    </ol>
+    
+    <dl> <!--Definition list-->
+      <dt>The term</dt>
+      <dd>The definition of the term</dd>
+    </dl>
+    <hr>
+  <hr>
+</div>
+  
+<!--Preformatted text--->
+    <pre> 
+        this 
+        is 
+        a test 
+    </pre>
+  <hr>
+      
+  <!--Blockquote-->
+  <blockquote>
+    <q contenteditable="true">This is a quote</q>
+    <cite>Othmane Kabbaj</cite>{{{}}} 
+  </blockquote>
+  <hr>
+          
+  <!--Text Tags-->
+ <div>
+  <h2 title="this is a test">Test</h2>
+  <p><strong>This</strong> <em>is</em> <mark>a</mark> <abbr title="abbreviation">test</abbr></p> 
+  <!--strong => Important Text Than Bold-->
+  <!-- mark => Marked Text Or Highlighted Text -->
+  <!-- i => Italic same as <em></em>-->
+  <!-- u => Underline -->
+  <!-- del => Deleted Text -->
+  <!-- ins => Inserted Text same as <u></u> -->
+  <hr>
+  <code>&lt;This is a test&gt;</code>
+  <hr>
+  <p>This is a <sub>test</sub></p>
+  <p>This is a <sup>test</sup></p>
+  <p>This is a <small>test</small></p>
+<hr>
+  <p dir="rtl">This is a test</p> <!--direction attribute-->
+  <bdo dir="rtl">This is a test</bdo>
+  <p>this is <br>a Test</p> <!--br for break-->
+  <hr> <!--horizental rule-->
+<hr>
+</div>
+          
+<!--Figure and Figcaption for images-->
+<figure>
+  <img src="test.png" alt="test" height="300" width="500">
+  <figcaption>This is a test</figcaption>
+</figure>
+<hr>
+          
+<!--Audio-->
+<audio controls src="test.mp3" loop ></audio><br>
+<hr>
+          
+<!--Video-->
+<video  src="test.mp4" width="500" height="300" controls loop muted poster="test.png"></video>
+<hr>
+          
+<!--Iframe-->
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0Gr1XSyxZy0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+<hr>
+</div>          
+
+<!--HTML Forms-->
+    <div id="HTML Forms">
+<form id="form" action="">
+  
+  <label for="text">Email:</label><br>
+  <input  type="email" placeholder="othmanekabbaj@gmail.com" required autofocus><br>
+  <hr>
+  <input  type="email" value="othmanekabbaj@gmail.com" readonly><br>  <hr>
+
+  <input  type="email" value="othmanekabbaj@gmail.com" disabled><br>  <hr>
+
+  <label for="password">Pasword:</label><br>
+  <input  type="password" placeholder="12345" minlength="4" maxlength="8" required><br>  <hr>
+
+  <input id="search" name="search" type="search" placeholder="&#128269;"><br>  <hr>
+
+  <input id="phone" name="phone" type="tel" placeholder="phone number"> <br>  <hr>
+
+  <textarea id="textarea" name="textarea" cols="30" rows="15"></textarea>  <hr>
+
+  <input id="color" name="color" type="color">  <hr>
+
+  <input id="file" name="file" type="file">   <hr>
+
+  <input id="file" name="file" type="file" accept="image/*" multiple>  <hr>
+
+  <input id="link" name="link" type="url">  <hr>
+
+  <input id="date" name="date" type="date">  <hr>
+
+  <input id="month" name="month" type="month">   <hr>
+
+  <input id="time" name="time" type="time">  <hr>
+
+  <label for="radio">radio</label>
+  <input type="radio" name="color" id="red" value="#F00">
+  <input type="radio" name="color" id="green" value="#0F0">
+  <input type="radio" name="color" id="blue" value="#00F">
+    <hr>
+
+  <input id="checkbox" name="simplecheckbox" value="The checkbox is checked" type="checkbox" checked>
+  <label for="checkbox">check box</label>  <hr>
+
+  <input type="hidden" value="XXX">  <hr>
+
+  <input type="reset" value="reset">  <hr>
+
+  <input type="range" name="range" min=10 max="100" step="10">  <hr>
+
+  <input type="number" name="number" min="1" max="112" step="1">  <hr>
+
+  <input type="submit">  <hr>
+
+  
+  <input list="sex" name="sex">
+  <datalist>
+  <option value="male">
+  <option value="female">
+  </datalist>  <hr>
+
+  
+  <label for="sex">sex</label>  
+
+  <select name="sex" id="sex">
+  <option value="1">male</option>
+  <option value="2">female</option>
+  <option value="3">homosexual</option>
+  <option value="4">dont wanna talk about it</option>
+  </select><hr>
+
+  <progress value="22" max="100"></progress><hr>
+</form>
+</div>
+
+<!--HTML Tables-->
+      <div id="HTML Tables">
+          <table border="1" cellspacing="10" cellpadding="10" >
+    <caption>Title for the table</caption>
+    <tr><!--thead--><!--table row-->
+      <td>xxxxx</td><!--for the header we can also use th=> table header cell-->
+      <td>xxxxx</td>
+      <td>xxxxx</td>
+      <td>xxxxx</td>
+    </tr>
+    <tr><!--tbody-->
+      <td>xxxxx</td>
+      <td>xxxxx</td>
+      <td>xxxxx</td>
+      <td>xxxxx</td>
+    </tr>
+    <tr>
+      <td>xxxxx</td>
+      <td>xxxxx</td>
+      <td>xxxxx</td>
+      <td>xxxxx</td>
+    </tr>
+    <tr><!--tfoot-->
+      <td>xxxxx</td><!--table data cell-->
+      <td>xxxxx</td>
+      <td colspan="2">xxxxx</td>
+      <!--to merge 2 cells horizentaly => 
+      <td></td>
+      <td>xxx</td>     =>    <td colspan="2">xxx</td> -->
+      <td rowspan="2">xxxxx</td>
+      <!--to merge 2 cells vertically-->
+    </tr>
+  </table>
+</div>
+
+<!--HTML Semantic Tags-->
+<div id="HTML Semantic Tags">
+  <header></header>
+  <footer></footer>
+  <aside></aside>
+  <main></main>
+  <article></article>
+  <nav></nav>
+  <section></section>
+  <details></details>
+</div>
+
+
+
+</body>
+</html>
+ 
